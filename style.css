@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+:root {
+  --clr-black: #1c1c1c;
+  --clr-gray: #ececec;
+  --clr-white: #f7f7f7;
+
+  --type-normal: #a8a878;
+  --type-fire: #f08030;
+  --type-water: #6890f0;
+  --type-grass: #78c850;
+  --type-electric: #f8d030;
+  --type-ice: #98d8d8;
+  --type-fighting: #c03028;
+  --type-poison: #a040a0;
+  --type-ground: #e0c068;
+  --type-flying: #a890f0;
+  --type-psychic: #f85888;
+  --type-bug: #a8b820;
+  --type-rock: #b8a038;
+  --type-ghost: #705898;
+  --type-dark: #705848;
+  --type-dragon: #7038f8;
+  --type-steel: #b8b8d0;
+  --type-fairy: #f0b6bc;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.title {
+  font-family: "Comic Neue", cursive;
+  font-size: 8rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+  letter-spacing: 0.5rem;
+  color: #f8f32d;
+  text-shadow: 3px 3px 3px #00f;
+}
+
+/* boton de busqueda */
+
+.container-search {
+  text-align: center;
+}
+
+#label {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  margin-top: 1rem;
+}
+
+.loader {
+  margin: 0 auto;
+}
+
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* contenido pokedex */
+.grid-fluid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.template__container {
+  margin: 1rem;
+  transition: all 0.3s ease;
+}
+
+.template__img {
+  background-color: #c4c4c4;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.template__name {
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.template__number {
+  margin: 1rem 0;
+  color: #c4c4c4;
+}
+
+.template__types {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.filter {
+  opacity: 0;
+  visibility: hidden;
+  order: 1;
+}

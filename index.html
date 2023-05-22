@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <h1 class="title">PoKéDex</h1>
+
+    <div class="container-search">
+      <label for="" id="label">Buscar</label>
+      <input type="search" id="input" placeholder="ej:bulbasaur" />
+    </div>
+
+    <div class="btns"></div>
+    <section id="list_pokemon" class="grid-fluid"></section>
+
+    <template id="template" class="template">
+      <section class="template__container">
+        <img class="template__img" />
+        <p class="template__name"></p>
+        <p class="template__number"></p>
+        <div class="template__types">
+          <p class="template__type1"></p>
+          <p class="template__type2"></p>
+        </div>
+      </section>
+    </template>
+
+    <script src="/js/app.js" defer type="module"></script>
+  </body>
+</html>
